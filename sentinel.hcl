@@ -9,12 +9,12 @@ import "module" "tfresources" {
   source = "./modules/tfresources/tfresources.sentinel"
 }
 
-policy "s3-policy" {
+policy "s3-block-public-access-account-level" {
   source = "./policies/s3/s3-block-public-access-account-level.sentinel"
   enforcement_level = "advisory"
 }
 
-policy "ec2-policy" {
+policy "ec2-ebs-encryption-enabled" {
   source = "./policies/ec2/ec2-ebs-encryption-enabled.sentinel"
   enforcement_level = "advisory"
 }
